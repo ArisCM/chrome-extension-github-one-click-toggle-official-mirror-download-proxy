@@ -20,3 +20,11 @@ github-proxy-extension/  # 插件根目录
 ├── popup.js              # 弹窗交互逻辑（DOM操作、域名切换逻辑、下拉菜单状态保存、与background.js通信）
 ├── background.js         # 后台服务核心（动态创建/更新DNR规则、监听存储变化、处理弹窗消息）
 └── rules.json            # 静态规则占位文件（内容为[]，仅满足manifest.json的rule_resources必填项，实际禁用不生效）
+
+##预览图片
+![](https://github.com/user-attachments/assets/e8676259-b0e2-4fd0-9162-8f7d26f699ef)
+![](https://github.com/user-attachments/assets/b31f4880-62ef-45f8-9560-4bd3347a74eb)
+![](https://github.com/user-attachments/assets/b8012316-0528-4f43-8c7f-987472f4b1ba)
+![](https://github.com/user-attachments/assets/9911870c-4e57-4e40-8d11-e874684f702c)
+![](https://github.com/user-attachments/assets/59aab7cc-24b2-434f-a31e-88dbebee8125)
+![](https://github.com/user-attachments/assets/8ca978f5-03f5-4d01-acb5-ae42e36d920b)
