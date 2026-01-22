@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "一键切换GitHub官方/镜像站及下载代理站",
+  "version": "1.0",
+  "description": "一键切换GitHub官方/镜像站及下载代理站，适用于无代理环境访问GitHub及下载文件（适配Chrome/360极速 V3）",
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",  
+    "48": "icon.png",
+    "64": "icon.png",
+    "128": "icon.png"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "declarativeNetRequest",
+    "storage"
+  ],
+  "host_permissions": [
+    "*://github.com/*",
+    "*://bgithub.xyz/*",
+    "*://gh-proxy.org/*",
+    "*://hk.gh-proxy.org/*",
+    "*://cdn.gh-proxy.org/*",
+    "*://edgeone.gh-proxy.org/*",
+    "*://release-assets.githubusercontent.com/*"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "placeholder_rules",
+        "enabled": false,
+        "path": "rules.json"
+      }
+    ],
+    "dynamic_rules": {
+      "max_dynamic_rules": 10
+    }
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "一键切换GitHub官方/镜像站"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
